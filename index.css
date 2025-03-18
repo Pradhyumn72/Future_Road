@@ -257,13 +257,25 @@ nav {
 }
 
 
+/* for making website for mobile view */
 @media(max-width:430px){
-
-
-
-}
-
-
-@media(min-width:431px) and (max-width:768px){
+    #nav ul{
+        display: none;
+        
+    }
+    }
+    /* for min width for tablet  */
+    @media(min-width:431px) and (max-width:768px){
+        
+    #nav ul{
+        display: none;
+    }
     
-}
+    }
+    
+    #check:checked~#headpart nav ul {
+        display: block;
+    
+        line-height: 50px;
+    }
+
