@@ -206,16 +206,6 @@ nav {
     font-size: 16px;
     color: #555;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 50, 0.9);
-    padding: 5px 5px;
-     color: wheat;
-    top: 0;
-    width: 100%;
-}
 .footer {
     background-color: #13133a;
     color: #f4e1c5;
@@ -223,20 +213,23 @@ footer{
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures proper spacing */
-    min-height: 250px; /* Adjust as needed */
+    justify-content: space-between;
+    height: 60vh;
+    
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap; /* Allows responsiveness */
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 200px; /* Prevents shrinking */
 }
 
 .footer-section h4 {
@@ -254,26 +247,34 @@ footer{
     text-decoration: underline;
 }
 
-/* Social Icons Styling */
+/* Social Icons Fix */
 .social-icons {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.social-icons img {
-    width: 25px;
-    height: 25px;
-    filter: brightness(0) invert(1);
+.social-icons div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icons i {
+    font-size: 15px;
 }
 
 /* Fix for Copyright Alignment */
 .footer-copyright {
     text-align: center;
-    margin-top: auto; /* Pushes it to the bottom */
+    margin-top: 90px;
+    margin-right:300px;
+    margin-left: 400px;
+    margin-bottom: 200px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 
 bg-video {
