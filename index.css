@@ -259,7 +259,7 @@ nav {
 
 /* for making website for mobile view */
 @media(max-width:430px){
-    #nav ul li {
+    body{
         display: none;
         
     }
