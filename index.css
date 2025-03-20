@@ -259,10 +259,7 @@ nav {
 
 /* for making website for mobile view */
 @media(max-width:430px){
-    body{
-        display: none;
-        
-    }
+   
     #bars{
         display: block;
         position: absolute;
@@ -270,6 +267,7 @@ nav {
         right: 5%;
         font-size: 30px;
         z-index: 2000;
+        color: wheat;
     }
     #check:checked~#headpart nav ul {
         display: block;
@@ -277,6 +275,9 @@ nav {
         left: 30%;
         top: 50px;
         line-height: 50px;
+    }
+    .F1{
+        
     }
     }
     /* for min width for tablet  */
