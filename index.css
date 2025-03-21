@@ -6,6 +6,9 @@ body {
 .logo{
     display: none;
 }
+.logo img{
+    display: none;
+}
 nav {
     background: rgba(0, 0, 50, 0.9);
     padding: 10px 0;
@@ -269,14 +272,91 @@ nav {
 
 /* for making website for mobile view */
 @media(max-width:430px){
-   .nav-links{
+    @media screen and (max-width: 430px) {
+        .nav-links {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .hero h1 {
+            font-size: 20px;
+        }
+    
+        button {
+            width: 100%;
+        }
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .F1 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        text-align: center;
+    }
+    @media screen and (max-width: 430px) {
+        .career-section h2 {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+    
+        .career-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .career-cards .card {
+            width: 90%;
+            text-align: center;
+            padding: 15px;
+        }
+    
+        .career-cards .card img {
+            width: 80px;
+            height: auto;
+        }
+    
+        .career-cards .card h3 {
+            font-size: 18px;
+        }
+    
+        .career-cards .card p {
+            font-size: 14px;
+        }
+    
+        .career-cards .card button {
+            width: 100%;
+            padding: 8px;
+        }
+    }
+    
+}
+
+    
+   /* .nav-links{
     display: none;
    }
-   .logo img{
-    display: flex;
-    height: 40px;
-    width: 40px;
-    z-index: 1000;
+
+   .media img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2px;
+        width: 2px;
 
    }
    .logo p{
@@ -321,11 +401,11 @@ nav {
         
     }
     .hero button{
-         font-size: x-small;
+         font-size: xx-small;
          margin-right:100px ;
-    }
+    } */
 
-    }
+    
 
 
 
