@@ -271,21 +271,7 @@ nav {
 
 
 /* for making website for mobile view */
-@media(max-width:430px){
-    @media screen and (max-width: 430px) {
-        .nav-links {
-            flex-direction: column;
-            text-align: center;
-        }
-    
-        .hero h1 {
-            font-size: 20px;
-        }
-    
-        button {
-            width: 100%;
-        }
-    }
+@media (max-width:430px){
     .nav-links {
         flex-direction: column;
         text-align: center;
@@ -299,111 +285,65 @@ nav {
         width: 100%;
     }
 
-    .F1 .row {
+.nav-links {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+}
+
+.F1 .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature {
+    width: 100%;
+    text-align: center;
+}
+    .career-section h2 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .career-cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .feature {
-        width: 100%;
+    .career-cards .card {
+        width: 90%;
         text-align: center;
+        padding: 15px;
     }
-    @media screen and (max-width: 430px) {
-        .career-section h2 {
-            font-size: 20px;
-            line-height: 1.4;
-        }
-    
-        .career-cards {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .career-cards .card {
-            width: 90%;
-            text-align: center;
-            padding: 15px;
-        }
-    
-        .career-cards .card img {
-            width: 80px;
-            height: auto;
-        }
-    
-        .career-cards .card h3 {
-            font-size: 18px;
-        }
-    
-        .career-cards .card p {
-            font-size: 14px;
-        }
-    
-        .career-cards .card button {
-            width: 100%;
-            padding: 8px;
-        }
+
+    .career-cards .card img {
+        width: 80px;
+        height: auto;
     }
-    
+
+    .career-cards .card h3 {
+        font-size: 18px;
+    }
+
+    .career-cards .card p {
+        font-size: 14px;
+    }
+
+    .career-cards .card button {
+        width: 100%;
+        padding: 8px;
+    }
+ 
+
 }
-
-    
-   /* .nav-links{
-    display: none;
-   }
-
-   .media img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 2px;
-        width: 2px;
-
-   }
-   .logo p{
-    
-   }
-    #bars{
-        display: block;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        font-size: 30px;
-        z-index: 2000;
-        color: wheat;
-    }
-    #check:checked~#headpart nav ul {
-        display: block;
-        width:100% ;
-        left: 30%;
-        top: 50px;
-        line-height: 50px;
-    }
-    .F1{
-        
-    }
-       
-    .hero{
-        position:fixed;
-        box-sizing: border-box;
-        position: relative;
-        background: url('./front.jpg') no-repeat center center/cover;
-        height: 80vh;
-    }
-    .hero p{
-        font-size: small;
-        
-    }
-    .d1{
-        width: 25%;
-        height: 15%;
-        font-size: x-small;
-        margin-top: 50px;
-        
-    }
-    .hero button{
-         font-size: xx-small;
-         margin-right:100px ;
-    } */
+   
 
     
 
@@ -413,14 +353,259 @@ nav {
 
 
 
-    /* for min width for tablet  */
+    /* for tablet  */
     @media(min-width:431px) and (max-width:768px){
         
-    #nav ul{
+    .nav ul{
         display: none;
     }
-    
-    
+    .nav {
+        padding: 10px 20px;
+        background-color: #fff;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links li img {
+        width: 50px; /* Adjust logo size */
+        height: auto;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color:wheat;
+        padding: 5px 10px;
+    }
+
+    .nav-links li a:hover {
+        color: cyan;
+    }
+    .hero {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .hero button {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .d1 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .features {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .features h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .F1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .feature {
+        width: 45%;
+        text-align: center;
+    }
+
+    .feature img {
+        width: 35px;
+        height: auto;
+    }
+
+    .feature p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .career-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .career-section h2 {
+        font-size: 22px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .career-section span {
+        font-size: 20px;
+        color: cyan;
+    }
+
+    .career-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        text-align: center;
+    }
+
+    .card img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .card button {
+        font-size: 14px;
+        padding: 8px 16px;
+        background-color: cyan;
+        border: none;
+        cursor: pointer;
+    }
+    .career-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        text-align: center;
+    }
+
+    .card img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .card button {
+        font-size: 14px;
+        padding: 8px 16px;
+        background-color: cyan;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .card button:hover {
+        background-color: #008b8b;
+        color: white;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section a {
+        display: block;
+        font-size: 14px;
+        margin: 5px 0;
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+        color: cyan;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+    }
     }
     
     
