@@ -224,7 +224,13 @@ a {
     width: 100%;
     height: auto;
 }
-
+#C12{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#C12 a 
 
 /* footer */
 .footer {
@@ -286,12 +292,8 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#C12{
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 
 @media (max-width:430px){
