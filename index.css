@@ -272,9 +272,17 @@ nav {
 
 /* for making website for mobile view */
 @media (max-width:430px){
+    header{
+        padding: auto;
+    }
+    .nav{
+        background-color: wheat;
+    }
     .nav-links {
         flex-direction: column;
         text-align: center;
+        padding: 5px;
+        position: relative;
     }
 
     .hero h1 {
@@ -377,7 +385,7 @@ button {
     }
 
     .nav-links li img {
-        width: 50px; /* Adjust logo size */
+        width: 30px; /* Adjust logo size */
         height: auto;
     }
 
