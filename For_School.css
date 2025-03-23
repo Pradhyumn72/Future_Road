@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -213,23 +220,20 @@ nav {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 60vh;
-    
+    justify-content: space-between; /* Ensures proper spacing */
+    min-height: 250px; /* Adjust as needed */
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allows responsiveness */
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-width: 200px; /* Prevents shrinking */
 }
 
 .footer-section h4 {
@@ -247,32 +251,29 @@ nav {
     text-decoration: underline;
 }
 
-/* Social Icons Fix */
+/* Social Icons Styling */
 .social-icons {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.social-icons div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.social-icons i {
-    font-size: 15px;
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
 }
 
 /* Fix for Copyright Alignment */
 .footer-copyright {
     text-align: center;
-    margin-top: 90px;
-    margin-right:300px;
-    margin-left: 400px;
-    margin-bottom: 200px;
+    margin-top: auto; /* Pushes it to the bottom */
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.logo{
+    display: none;
+    z-index: -10000;
 }
 
 
