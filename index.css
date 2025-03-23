@@ -467,17 +467,7 @@ button {
  
 
 }
-   
-
-    
-
-
-
-
-
-
-
-    /* for tablet  */
+       /* for tablet  */
     @media(min-width:431px) and (max-width:768px){
         
     .nav ul{
