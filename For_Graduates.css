@@ -307,11 +307,6 @@ a {
 }
 
 
-
-
-
-
-
 @media (max-width:430px){
     .nav-links {
         flex-direction: column;
