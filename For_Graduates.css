@@ -220,7 +220,7 @@ p {
 }
 
 a {
-    color: #007bff;
+    color: wheat;
     text-decoration: none;
 }
 
@@ -289,6 +289,7 @@ a {
     display: flex;
     align-items: center;
     gap: 8px; /* Space between icon and text */
+    color: wheat;
 }
 
 .social-icons img {

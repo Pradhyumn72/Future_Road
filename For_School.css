@@ -218,7 +218,7 @@ nav {
     color: #f4e1c5;
     padding: 40px 10%;
     font-size: 16px;
-    display: flex;
+    
     flex-direction: column;
     justify-content: space-between; /* Ensures proper spacing */
     min-height: 250px; /* Adjust as needed */
@@ -270,6 +270,8 @@ nav {
     margin-top: auto; /* Pushes it to the bottom */
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    
 }
 .logo{
     display: none;
